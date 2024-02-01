@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========== Nav-bar start ================*/
+.nav-bar {
+    display: flex;
+    /* display: none; */
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    border-bottom: solid 1px black;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    padding: 3px;
+    list-style: none;
+    /* border: solid 1px black; */
+    margin-left: 120px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-ul a {
+    color: black;
+    text-decoration: none; 
+}
+
+/* .nav-ul a:hover {
+    transition: 0.6s ease-in-out;
+    color: aqua;
+} */
+/*========= Nav-bar End ==============*/
+
+
+/*========= User container start ==============*/
+.user-cont {
+    margin: auto;
+    width: 100%;
+    height: 680px;
+    padding-top: 75px;
+    gap: 20px;
+    display: flex;
+    padding: 0px 50px;
+    background-color: rgb(106, 177, 177);
+    
+}
+
+.info-cont {
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    /* border: solid 1px greenyellow; */
+    padding-left: 0px;
+    position: relative;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.info-cont h3 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.info-cont h2 {
+    font-size: 40px;
+}
+
+.info-cont p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.resume-btn {
+    padding: 11px 33px;
+    border: none;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: black;color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+}
+
+
+.contact-btn {
+    padding: 11px 33px;
+    border: none;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+    bottom: 40px;
+}
+
+
+.user-img-cont {
+    margin: auto;
+    width: 40%;
+    height: 450px;
+    /* border: solid 1px greenyellow; */
+    padding-left: 0px;
+    text-align: center;
+}
+
+
+.pro-img {
+    width: 75%;
+    height: 90%;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(247, 247, 247);
+}
+
+.pro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+/*========= User container Ena ==============*/
+
+
+/*========= About container start ==============*/
+.about-cont {
+    width: 85%;
+    margin: auto;
+    /* border: solid 1px red; */
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-cont h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: aquamarine;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.para {
+    width: 60%;
+    text-rendering: auto;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.para span:nth-child(1) {
+    margin: 8px 0px;
+    font-size: 23px;
+}
+
+.para span:nth-child(2) {
+    margin: 8px 5px;
+    font-size: 27px;
+    font-weight: bolder;
+    border-bottom: solid 3px yellow;
+}
+
+
+
+.about-info {
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 21px;
+}
+
+.about-info {
+    li span:nth-child(1){
+        color: blueviolet;
+        font-weight: bold;
+        font-size:16px;
+    }
+
+    li span:nth-child(3){
+        color: blueviolet;
+        font-weight: bold;
+        font-size:18px;
+    }
+
+}
+/*========= About container End ==============*/
+
+
+/*========= Skills container start ==============*/
+.skills-cont {
+    padding: 50px 0px;
+    margin-top: 20px;
+    background-color: rgba(155, 155, 155, 0.055);
+}
+
+.skills-cont h3{
+    text-align: center;
+    margin: 40px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill div {
+    margin: auto;
+    /* border: solid 1px red; */
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.skill img {
+    width: 100%;
+    height: 85%;
+    object-fit: fill;
+}
+/*========= Skills container End ==============*/
+
+
+/*========= Project container start ==============*/
+.project-cont {
+    padding: 50px 0px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-cont>h3 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.projects {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* border: solid 1px black; */
+}
+
+.proj-card {
+    margin: auto;
+    width: 90%;
+    /* border: solid 1px red; */
+    border-radius: 7px;
+    padding: 10px 12px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.proj-card:hover {
+    transition: 0.6s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.proj-card>div {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+
+.proj-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: contain;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.proj-card h3 {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.proj-card p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 19px;
+    margin-left: 20px;
+    width: 90%;
+    text-align: start;
+    /* border: solid 1px red; */
+}
+
+
+.project-lang-img img {
+    width: 50px;
+    height: 50px;
+    margin: 2px 5px;
+}
+
+.proj-card button {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 5px 0px 8px;
+    padding: 11px 24px;
+    float: inline-end;
+    cursor: pointer;
+    background-color: aqua;
+}
+/*========= Project container End ==============*/
+
+
+/*========= Contact Information container start ==============*/
+.contact-info-cont {
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.322);
+    padding: 120px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info-cont h3 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.cnt-info {
+    width: 85%;
+    margin: auto;
+    /* border: solid 1px red; */
+    text-align: center;
+}
+
+.cnt-info p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.cnt-info div {
+    margin-top: 25px;
+}
+
+.cnt-info span {
+    font-size: 20px;
+}
+
+.cnt-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 40px 10px 0px 10px;
+}
+/*========= Contact Information container End ==============*/
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .pro-img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .user-cont {
+        display: block;
+        height: auto;
+        padding: 20px 50px;
+    }
+
+    .info-cont {
+        width: 100%;
+        margin-top: 20px; 
+        height: auto;
+        padding-bottom: 110px;
+        text-align: center;/* Add margin for better spacing */
+    }
+
+    .user-img-cont {
+        width: 60%;
+        height: auto;
+    }
+
+    .pro-img {
+        height: 90%;
+        margin: auto;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-info {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .user-cont {
+        height: auto;
+    }
+
+    .resume-btn {
+        right: 18%;
+    }
+
+    .contact-btn {
+        left: 15%;
+    }
+
+    .para {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        border: solid 1px red;
+    }
+
+    .skill {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+    .resume-btn {
+        right: 10px;
+    }
+
+    .contact-btn {
+        left: 10px;
+    }
+
+    .skill {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .resume-btn {
+        right: 30px;
+        left: 30px;
+        bottom: 48px;
+    }
+    .contact-btn {
+        bottom: 0;
+        right: 30px;
+        left: 30px;
+    
+    }
+
+    .about-info {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .proj-card {
+        width: 100%;
+    }
+
+
+}
