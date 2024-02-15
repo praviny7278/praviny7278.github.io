@@ -52,3 +52,10 @@ document.getElementById('pr4-git-btn').addEventListener('click', ()=> {
 
     window.location.href = 'https://github.com/praviny7278/game_dev_webClone'
 });
+
+let c = { greeting: 'Hey!' };
+let d;
+
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);

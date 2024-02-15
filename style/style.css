@@ -72,6 +72,11 @@
 
 .info-cont h2 {
     font-size: 40px;
+     /* Hide overflowing characters */
+    /* white-space-collapse: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black; 
+    animation: typing 5s steps(1000) infinite;  */
 }
 
 .info-cont p {
@@ -119,9 +124,9 @@
 .pro-img {
     width: 75%;
     height: 90%;
-    padding: 8px;
+    padding: 5px;
     border-radius: 50%;
-    background-color: rgb(247, 247, 247);
+    background: linear-gradient(to bottom, red, green, blue);
 }
 
 .pro-img img {
@@ -130,15 +135,44 @@
     object-fit: fill;
     border-radius: 50%;
 }
+
 /*========= User container Ena ==============*/
+
+
+.about-cont>h3,
+.skills-cont>h3,
+.experience-cont>h3,
+.project-cont>h3
+ {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding:  9px 5px;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+.about-cont h3 p,
+.skills-cont h3 p,
+.experience-cont h3 p,
+.project-cont h3 p {
+    white-space: nowrap;
+    width: 300px;
+    margin: auto;
+    animation:  bounce 5s linear infinite;
+    /* border: solid 1px red */
+}
 
 
 /*========= About container start ==============*/
 .about-cont {
-    width: 85%;
-    margin: auto;
     /* border: solid 1px red; */
     padding-bottom: 20px;
+    padding-left: 8%;
+    margin-top: 100px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -146,10 +180,11 @@
     text-align: center;
     padding: 5px;
     background-color: aquamarine;
-    margin-top: 100px;
+    margin: 0;
     margin-bottom: 40px;
     font-size: 38px;
     font-weight: bold;
+    width: 90%;
 }
 
 .para {
@@ -157,6 +192,7 @@
     text-rendering: auto;
     font-size: 17px;
     font-weight: 500;
+    /* border: solid 1px red; */
 }
 
 .para span:nth-child(1) {
@@ -207,11 +243,16 @@
 }
 
 .skills-cont h3{
+    width: 85%;
     text-align: center;
-    margin: 40px 0px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 38px;
+    padding: 5px;
+    background-color: aquamarine;
 }
 
 .skill {
@@ -239,8 +280,83 @@
     width: 100%;
     height: 85%;
     object-fit: fill;
+    
+}
+
+.skill img:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 /*========= Skills container End ==============*/
+
+
+/*========= Experience container Start ==============*/
+
+.experience-cont {
+    width: 100%;
+    margin: 40px 0px;
+    padding: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.exp-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    /* border: solid 1px red; */
+}
+
+.exp-sec div{
+    /* border: solid 1px red; */
+    margin: auto;
+    width: 80%;
+    padding: 15px 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.exp-sec div:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.exp-sec div:hover .company-img img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    animation: reverse-spin forwards;
+}
+
+.company-img {
+    /* border: solid 1px red; */
+    text-align: center;
+}
+
+.company-img img {
+    width: 30%;
+    height: 30%;
+    animation: spin 3s linear infinite;
+}
+
+.exp-sec div ul li {
+    list-style: none;
+    margin: 5px 0px;
+    font-size: 19px;
+    text-rendering: optimizeSpeed;
+    width: 100%;
+}
+
+.exp-sec div ul li span {
+    font-weight: bold;
+    color: aquamarine;
+}
+
+/*========= Experience container End ==============*/
+
 
 
 /*========= Project container start ==============*/
@@ -251,9 +367,13 @@
 }
 
 .project-cont>h3 {
+    width: 85%;
+    margin: auto;
     text-align: center;
     font-size: 38px;
     font-weight: bold;
+    padding: 5px;
+    background-color: aquamarine;
 }
 
 .projects {
@@ -365,13 +485,89 @@
     font-size: 20px;
 }
 
+.cnt-info a {
+    text-decoration: none;
+}
+
 .cnt-info img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin: 40px 10px 0px 10px;
+    animation: spin 8s linear infinite;
 }
+
+.cnt-info img:hover {
+    animation: reverse-spin forwards;
+}
+
 /*========= Contact Information container End ==============*/
+
+@keyframes run-text {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateX(-70%); /* Start and end position */
+    }
+    50%, 50% {
+      transform: translateX(70%); /* Midway position */
+    }
+
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverse-spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -412,6 +608,10 @@
         height: auto;
     }
 
+    .exp-sec div {
+        width: 90%;
+    }
+
     .pro-img {
         height: 90%;
         margin: auto;
@@ -447,11 +647,21 @@
         text-align: center;
         width: 90%;
         margin: auto;
-        border: solid 1px red;
+        /* border: solid 1px red; */
     }
 
     .skill {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .exp-sec {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+
+        div {
+            width: 90%;
+            padding-top: 20px;
+        }
     }
 }
 
@@ -466,7 +676,11 @@
     }
 
     .skill {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        div {
+            width: 130px;
+            height: 130px;
+        }
     }
 
     .projects {
